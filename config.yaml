@@ -1,0 +1,25 @@
+# Data
+dataset_name: "ncduy/mt-en-vi"
+# dataset_config_name: "iwslt2015-vi-en"
+src_lang: 'vi'
+tgt_lang: 'en'
+src_max_len: 50
+tgt_max_len: 50
+
+# Model
+src_model_name: "bert-base-multilingual-cased"
+tgt_model_name: "gpt2"
+
+# Training
+load_model_from_path: False
+learning_rate: 0.00003
+train_batch_size: 1
+eval_batch_size: 1
+num_train_epochs: 2
+use_eval_steps: False
+eval_steps: 100
+
+# Inference
+max_length_decoder: 75
+min_length_decoder: 25
+beam_size: 3
